@@ -8,19 +8,19 @@ export default function LaunchPage() {
     <div className="w-screen min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-white to-green-100 text-center px-4 overflow-hidden">
       {/* Header */}
       <header className="absolute top-6 left-6 flex items-center space-x-2 text-lg font-bold">
-        <span className="text-green-600">Data</span>
-        <span className="text-red-600">Collect</span>
+        <span className="text-green-600">Data<span className="text-red-600">Collect</span></span>
+        
       </header>
 
       {/* Contact Info */}
-      <div className="absolute top-6 right-6 flex items-center space-x-4 text-sm text-gray-700">
+      <div className="md:absolute top-6 right-6 flex items-center space-x-4 text-sm text-gray-700 mb-10">
         <div className="flex items-center space-x-1">
           <Mail size={16} />
-          <span>halo@equalyzcrowd.ai</span>
+          <span>datacollect@equalyz.ai</span>
         </div>
         <div className="flex items-center space-x-1">
           <Phone size={16} />
-          <span>0810 345 5243</span>
+          <span>08071997430</span>
         </div>
       </div>
 
@@ -32,7 +32,10 @@ export default function LaunchPage() {
         <p className="max-w-2xl text-gray-700 text-sm md:text-base">
           A Task management and data collection application that incentivises anyone, anywhere across Africa to contribute text, voice, image and video data, enriching our hyperlocal data bank, for hyperlocal AI models and small language model (SLM) development.
         </p>
-        <button className="px-6 py-3 bg-green-700 text-white rounded-md font-medium hover:bg-green-800 transition">
+        <button className="px-6 py-3 bg-green-700 text-white rounded-md font-medium hover:bg-green-800 transition"
+          // go to google form link
+          onClick={() => window.open('https://forms.gle/3y5y5y5y5y5y5y5y')}
+        >
           Join the waiting list
         </button>
       </main>
@@ -46,7 +49,7 @@ export default function LaunchPage() {
           <FaFacebookF className="hover:text-blue-600 cursor-pointer" />
           <FaInstagram className="hover:text-pink-600 cursor-pointer" />
         </div>
-        <p className="text-xs text-gray-600 mt-2">Equalyz Crowd - © 2025 All Rights Reserved.</p>
+        <p className="text-xs text-gray-600 mt-2">DataCollect - © 2025 All Rights Reserved.</p>
       </footer>
     </div>
   );
