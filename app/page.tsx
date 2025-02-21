@@ -46,11 +46,11 @@ export default function LaunchPage() {
       {/* Footer */}
       <footer className="absolute bottom-6 flex flex-col items-center">
         <div className="flex space-x-4 text-green-700 text-xl">
-          <FaYoutube className="hover:text-red-600 cursor-pointer" />
-          <FaLinkedin className="hover:text-blue-700 cursor-pointer" />
-          <FaTwitter className="hover:text-blue-500 cursor-pointer" />
-          <FaFacebookF className="hover:text-blue-600 cursor-pointer" />
-          <FaInstagram className="hover:text-pink-600 cursor-pointer" />
+          <FaYoutube className="hover:text-red-600 cursor-pointer" onClick={() => window.open("https://www.youtube.com/@EqualyzAI")} />
+          <FaLinkedin className="hover:text-blue-700 cursor-pointer" onClick={() => window.open("https://www.linkedin.com/company/equalyzai/posts/?feedView=all")} />
+          <FaTwitter className="hover:text-blue-500 cursor-pointer" onClick={() => window.open("https://x.com/equalyz_ai")} />
+          <FaFacebookF className="hover:text-blue-600 cursor-pointer" onClick={() => window.open("https://www.facebook.com/equalyzai/")}/>
+          <FaInstagram className="hover:text-pink-600 cursor-pointer" onClick={() => window.open("https://www.instagram.com/equalyz_ai/")} />
         </div>
         <p className="text-xs text-gray-600 mt-2">DataCollect - © 2025 All Rights Reserved.</p>
       </footer>
