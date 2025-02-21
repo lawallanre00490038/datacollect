@@ -20,7 +20,7 @@ export default function LaunchPage() {
         </div>
         <div className="flex items-center space-x-1">
           <Phone size={16} />
-          <span>08071997430</span>
+          <span>+2348071997430</span>
         </div>
       </div>
 
