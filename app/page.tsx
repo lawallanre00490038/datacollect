@@ -1,100 +1,52 @@
-import Image from "next/image";
+'use client';
 
-export default function Home() {
+import { Mail, Phone } from 'lucide-react';
+import { FaYoutube, FaLinkedin, FaTwitter, FaFacebookF, FaInstagram } from 'react-icons/fa';
+
+export default function LaunchPage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="w-screen min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-white to-green-100 text-center px-4 overflow-hidden">
+      {/* Header */}
+      <header className="absolute top-6 left-6 flex items-center space-x-2 text-lg font-bold">
+        <span className="text-green-600">Data</span>
+        <span className="text-red-600">Collect</span>
+      </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Contact Info */}
+      <div className="absolute top-6 right-6 flex items-center space-x-4 text-sm text-gray-700">
+        <div className="flex items-center space-x-1">
+          <Mail size={16} />
+          <span>halo@equalyzcrowd.ai</span>
         </div>
+        <div className="flex items-center space-x-1">
+          <Phone size={16} />
+          <span>0810 345 5243</span>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <main className="flex flex-col items-center space-y-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-green-700">
+          Our mobile app will be launching soon.
+        </h1>
+        <p className="max-w-2xl text-gray-700 text-sm md:text-base">
+          A Task management and data collection application that incentivises anyone, anywhere across Africa to contribute text, voice, image and video data, enriching our hyperlocal data bank, for hyperlocal AI models and small language model (SLM) development.
+        </p>
+        <button className="px-6 py-3 bg-green-700 text-white rounded-md font-medium hover:bg-green-800 transition">
+          Join the waiting list
+        </button>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      {/* Footer */}
+      <footer className="absolute bottom-6 flex flex-col items-center">
+        <div className="flex space-x-4 text-green-700 text-xl">
+          <FaYoutube className="hover:text-red-600 cursor-pointer" />
+          <FaLinkedin className="hover:text-blue-700 cursor-pointer" />
+          <FaTwitter className="hover:text-blue-500 cursor-pointer" />
+          <FaFacebookF className="hover:text-blue-600 cursor-pointer" />
+          <FaInstagram className="hover:text-pink-600 cursor-pointer" />
+        </div>
+        <p className="text-xs text-gray-600 mt-2">Equalyz Crowd - © 2025 All Rights Reserved.</p>
       </footer>
     </div>
   );
