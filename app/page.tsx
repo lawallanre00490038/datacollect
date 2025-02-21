@@ -1,6 +1,7 @@
 'use client';
 
 import { Mail, Phone } from 'lucide-react';
+import Image from 'next/image';
 import { FaYoutube, FaLinkedin, FaTwitter, FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 export default function LaunchPage() {
@@ -8,8 +9,7 @@ export default function LaunchPage() {
     <div className="w-screen min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-white to-green-100 text-center px-4 overflow-hidden">
       {/* Header */}
       <header className="absolute top-6 left-6 flex items-center space-x-2 text-lg font-bold">
-        <span className="text-green-600">Data<span className="text-red-600">Collect</span></span>
-        
+        <span className="text-green-600 text-xl">Data<span className="text-red-600">Collect</span></span>
       </header>
 
       {/* Contact Info */}
