@@ -5,6 +5,8 @@ import Image from 'next/image';
 import { FaYoutube, FaLinkedin, FaTwitter, FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 export default function LaunchPage() {
+
+  const link = "https://docs.google.com/forms/d/e/1FAIpQLScWUEMS-GmfveebDp9RbPyi86ZEM51-vq2FTZQd-vvtlihZWQ/viewform?usp=header"
   return (
     <div className="w-screen min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-white to-green-100 text-center px-4 overflow-hidden">
       {/* Header */}
@@ -34,7 +36,7 @@ export default function LaunchPage() {
         </p>
         <button className="px-6 py-3 bg-green-700 text-white rounded-md font-medium hover:bg-green-800 transition"
           // go to google form link
-          onClick={() => window.open('https://forms.gle/3y5y5y5y5y5y5y5y')}
+          onClick={() => window.open(link)}
         >
           Join the waiting list
         </button>
