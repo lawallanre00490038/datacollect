@@ -1,7 +1,6 @@
 'use client';
 
 import { Mail, Phone } from 'lucide-react';
-import Image from 'next/image';
 import { FaYoutube, FaLinkedin, FaTwitter, FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 export default function LaunchPage() {
