@@ -27,13 +27,15 @@ export default function LaunchPage() {
 
       {/* Main Content */}
       <main className="flex flex-col items-center space-y-4">
-        <h1 className="text-4xl md:text-5xl font-bold text-green-700">
+        <h1 className="text-4xl md:text-5xl font-bold text-[#097C07]">
           Our mobile app will be launching soon.
         </h1>
         <p className="max-w-2xl text-gray-700 text-sm md:text-base">
           A Task management and data collection application that incentivises anyone, anywhere across Africa to contribute text, voice, image and video data, enriching our hyperlocal data bank, for hyperlocal AI models and small language model (SLM) development.
         </p>
-        <button className="px-6 py-3 bg-green-700 text-white rounded-md font-medium hover:bg-green-800 transition"
+        <button className="
+        shadow-xl
+        px-6 py-3 bg-green-700 text-white rounded-md font-medium hover:bg-green-800 transition"
           // go to google form link
           onClick={() => window.open(link)}
         >
